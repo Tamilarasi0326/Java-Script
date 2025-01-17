@@ -1,0 +1,29 @@
+<!-- Question:
+
+*create an input tag with the id "inputbox"
+*create an h1 tag with the id "result"
+
+Your task it to:
+
+*Retrieve the value from the input box.
+*Insert this value into the h1 tag using the "textContent" property.
+*Use an "onkeyup" event handler to accomplish this. -->
+
+
+<input id="inputbox" type="text" onkeyup="update()">
+<h1 id="result"></h1>
+
+<script>
+    //select input tag
+    var inputbox = document.getElementById("inputbox")
+    
+    //select h1 tag
+    var result = document.getElementById("result")
+
+    function update()
+    {
+        result.textContent = inputbox.value
+    }
+
+</script>
+

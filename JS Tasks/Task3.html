@@ -1,0 +1,16 @@
+<!-- How can I create an HTML button that, when clicked,
+triggers a JavaScript function, and changes the button's color
+to red with each successive click -->
+
+<button id="btn" onclick="change()">Change color</button>
+
+<script>
+
+    // select btn
+    var btn = document.getElementById("btn")
+    
+    function change()
+    {
+        btn.style.backgroundColor="red"
+    }
+</script>

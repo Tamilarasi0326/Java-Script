@@ -1,0 +1,15 @@
+<h1 id="h1">Hello World</h1>
+
+<!-- button is created and function is called when button is clicked -->
+<button onclick="change()">change</button>
+
+<script>
+    var h1 = document.getElementById("h1")
+    console.log(h1.textContent)
+    
+    //creating function for change the content while button click
+    function change()
+    {
+        h1.textContent = "Bye World"
+    }
+</script>
